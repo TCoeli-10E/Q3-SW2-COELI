@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css">
+    <script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <form>
+            <p>are you done with online registration?</p>
+            <input type="radio" name="regis" value="yes">yes
+            <input type="radio" name="regis" value="no">no
+            <br><br>
+            <p>medical clearance?</p>
+            <input type="radio" name="medi" value="yes">yes
+            <input type="radio" name="medi" value="no">no
+            <br><br>
+            <label for="grade">grade and section?</label>
+            <select name="grade" id="grade">
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            <select name="section" id="section">
+                <option value="ruby">ruby</option>
+                <option value="sapphire">sapphire</option>
+                <option value="emerald">emerald</option>
+                <option value="topaz">topaz</option>
+            </select>
+            <br><br>
+            <input type="button" py-click="intram" value="submit">
+        </form>
+    </div>
+<div id="outputall"></div>
+<div id="output"></div>
+<py-script src="main.py"></py-script>
+
+</body>
+</html>
